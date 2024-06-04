@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基础模板</title>
+    <script src="./assets/library/unocss.min.js"></script>
+    <script src="./assets/library/jquery.min.js"></script>
+    <script src="./assets/library/layui/layui.js"></script>
+    <link rel="stylesheet" href="./assets/library/layui/css/layui.css" />
+    <script>
+      document.write(`<link rel="stylesheet" href="./assets/css/global.css?version=${Date.now()}" \/>`)
+    </script>
+    <script>
+      document.write(`<script type="module" src="./assets/js/public.js?version=${Date.now()}"><\/script>`)
+    </script>
+  </head>
+  <body>
+    <div class="index-container text-center p-20px space-y-50px">
+      <h2>基础模板</h2>
+      <div class="list"></div>
+    </div>
+  </body>
+  <script>
+    document.write(`<script type="module" src="./assets/js/index.js?version=${Date.now()}"><\/script>`)
+  </script>
+</html>

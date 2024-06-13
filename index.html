@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>基础模板</title>
     <script src="./assets/library/unocss.min.js"></script>
+    <script src="./assets/library/iconify-icon.min.js"></script>
     <script src="./assets/library/layui/layui.js"></script>
     <link rel="stylesheet" href="./assets/library/layui/css/layui.css" />
     <script>
@@ -18,10 +19,10 @@
     <div class="index-container text-center p-20px space-y-50px">
       <h2>基础模板</h2>
       <div class="list"></div>
-      <div class="layui-btn" id="clickRecoveryEvent">恢复列表</div>
+      <div class="layui-btn none hidden" id="clickRecoveryEvent">安静</div>
     </div>
   </body>
   <script>
-    document.write(`<script type="module" src="./assets/js/index.js?version=${Date.now()}"><\/script>`)
+    document.write(`<script type="module" src="./assets/js/index.js?version=${Date.now()}" async><\/script>`)
   </script>
 </html>

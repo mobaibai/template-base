@@ -16,6 +16,7 @@ function bindPageEvent() {
     .off('click', '.gradient-item-component')
     .on('click', '.gradient-item-component', function () {
       $(this).addClass('animate-bounce').siblings().removeClass('animate-bounce')
+      $('#clickRecoveryEvent').removeClass('hidden').addClass('show')
     })
 
   /** 恢复按钮点击 */

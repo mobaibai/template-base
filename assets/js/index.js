@@ -11,10 +11,18 @@ setPageComponent()
  * @return {type} Element
  */
 function bindPageEvent() {
+  /** 列表点击 */
   $('.gradient-items')
     .off('click', '.gradient-item-component')
     .on('click', '.gradient-item-component', function () {
       $(this).addClass('animate-bounce').siblings().removeClass('animate-bounce')
+    })
+
+  /** 恢复按钮点击 */
+  $('#clickRecoveryEvent')
+    .off('click')
+    .on('click', function () {
+      $('.gradient-items').find('.gradient-item-component').removeClass('animate-bounce')
     })
 }
 

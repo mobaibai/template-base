@@ -1,0 +1,118 @@
+/* 主题色 */
+:root {
+  --color-1: #e6f7ff;
+  --color-2: #bae7ff;
+  --color-3: #91d5ff;
+  --color-4: #69c0ff;
+  --color-5: #40a9ff;
+  --color-6: #1890ff;
+  --color-7: #096dd9;
+  --color-8: #0050b3;
+  --color-9: #003a8c;
+  --color-10: #002766;
+  --color-primary: var(--color-6);
+  --primary-color: var(--color-6);
+}
+
+/* Layui 主题色修改 Start */
+/* 按钮背景色 */
+.layui-btn {
+  background-color: var(--primary-color) !important;
+}
+
+/* 滑块按钮悬浮状态颜色 */
+.layui-slider-input-btn i:hover {
+  color: var(--primary-color) !important;
+}
+
+/* 侧边导航栏Logo文字颜色 */
+.layui-layout-admin .layui-logo {
+  color: var(--primary-color) !important;
+}
+
+/* 绿色背景色 */
+.layui-bg-green {
+  background-color: var(--primary-color) !important;
+}
+
+/* 绿色边框和文字颜色 */
+.layui-border-green {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+/* 文字颜色 */
+.layui-font-green {
+  color: var(--primary-color) !important;
+}
+
+/* 按钮悬停状态边框颜色 */
+.layui-btn-primary:hover {
+  border-color: var(--primary-color) !important;
+}
+
+/* 按钮组中主按钮悬停状态文字颜色 */
+.layui-btn-group .layui-btn-primary:hover {
+  color: var(--primary-color) !important;
+}
+
+/* 分页组件链接悬停状态文字颜色 */
+.layui-laypage a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* 当前激活的分页数字背景色 */
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: var(--primary-color) !important;
+}
+
+/* 输入框和下拉框获得焦点时的边框颜色 */
+.layui-laypage input:focus,
+.layui-laypage select:focus {
+  border-color: var(--primary-color) !important;
+}
+
+/* 上传控件悬停状态图标颜色 */
+.layui-upload-drag .layui-icon {
+  color: var(--primary-color);
+}
+
+/* 上传控件悬停状态边框颜色 */
+.layui-upload-drag[lay-over] {
+  border-color: var(--primary-color) !important;
+}
+
+/* 导航菜单选中子菜单项背景色 */
+.layui-nav-tree .layui-nav-child dd.layui-this a {
+  background-color: var(--primary-color) !important;
+}
+
+/* 导航菜单选中状态的指示条背景色 */
+.layui-nav-tree .layui-nav-bar {
+  background-color: var(--primary-color) !important;
+}
+
+/* 简洁风格的选项卡选中状态文字颜色 */
+.layui-tab-brief > .layui-tab-title .layui-this {
+  color: var(--primary-color) !important;
+}
+
+/* 输入框获得焦点时的边框颜色 */
+.layui-input:focus,
+.layui-textarea:focus {
+  border-color: var(--primary-color) !important;
+}
+
+/* 表单输入框和文本域获得焦点时的边框颜色及阴影 */
+.layui-form .layui-input:focus,
+.layui-form .layui-textarea:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(192, 221, 248, 0.08);
+}
+
+/* 输入框联合输入框分割符获得焦点时的边框颜色 */
+.layui-input-wrap .layui-input:focus + .layui-input-split {
+  border-color: var(--primary-color) !important;
+}
+
+/* Layui 主题色修改 End */

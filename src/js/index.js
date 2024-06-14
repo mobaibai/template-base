@@ -25,6 +25,18 @@ function bindPageEvent() {
     .on('click', function () {
       $('.gradient-items').find('.gradient-item-component').removeClass('animate-bounce')
     })
+
+  $('#clickRemoveEvent')
+    .off('click')
+    .on('click', function () {
+      if (!document.startViewTransition) {
+        return $('.gradient-items').find('.gradient-item-component:last').remove()
+      }
+
+      document.startViewTransition(() => {
+        $('.gradient-items').find('.gradient-item-component:last').remove()
+      })
+    })
 }
 
 /**

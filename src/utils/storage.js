@@ -4,6 +4,8 @@ import { Config } from '../config/index.js'
  * @description: 设置缓存
  * @param {type} key
  * @return {type} Storage | null
+ * @example
+ * getStorage('userInfo') // { name: '张三', age: 18 }
  */
 export const getStorage = key => {
   var value = localStorage.getItem(`${Config.APP_NAME}_${key}`)
@@ -20,6 +22,8 @@ export const getStorage = key => {
  * @description: 设置缓存
  * @param {type} key
  * @param {type} value
+ * @example
+ * setStorage('userInfo', { name: '张三', age: 18 })
  */
 export const setStorage = (key, value) => {
   if (typeof value === 'object') {
@@ -31,6 +35,8 @@ export const setStorage = (key, value) => {
 /**
  * @description: 删除缓存
  * @param {type} key
+ * @example
+ * removeStorage('userInfo')
  */
 export const removeStorage = key => {
   localStorage.removeItem(`${Config.APP_NAME}_${key}`)

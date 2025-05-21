@@ -1,5 +1,6 @@
 /**
  * @description: GET参数获取 GET.param Or GET['param']
+ * @example: GET.param 或者 GET['param']
  */
 export const GET = {}
 location.search.replace(/([^?&=]+)=([^&]+)/g, (_, k, v) => (GET[k] = v))
@@ -9,6 +10,8 @@ location.search.replace(/([^?&=]+)=([^&]+)/g, (_, k, v) => (GET[k] = v))
  * @param {type} time 毫秒时间戳
  * @param {type} format 转换格式
  * @return {type}
+ * @example
+ * formatTime(1672531199000, 'YYYY-MM-DD hh:mm:ss') // 2023-01-01 00:00:00
  */
 export const formatTime = (time = Date.now(), format = 'YYYY-MM-DD hh:mm:ss') => {
   if (typeof time === 'string') time = Number(time)
@@ -38,8 +41,9 @@ export const formatTime = (time = Date.now(), format = 'YYYY-MM-DD hh:mm:ss') =>
 /**
  * @description: Fetch 网络请求
  * @param {type} url
- * @param {type} options {文档：https://developer.mozilla.org/zh-CN/docs/Web/API/fetch}
+ * @param {type} options {Fetch文档：https://developer.mozilla.org/zh-CN/docs/Web/API/fetch}
  * @return {type}
+ * @example: requestFetch('url', { method: 'GET' })
  */
 export const requestFetch = (url, options = { method: 'GET' }) => {
   options.headers = {
